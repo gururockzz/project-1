@@ -1,0 +1,19 @@
+Screen:
+    BoxLayout:
+        orientation: 'vertical'
+        
+        MDTopAppBar:
+            title: 'Voice Command App'
+            left_action_items: [["menu", lambda x: app.callback()]]
+            right_action_items: [["stop", lambda x: app.stop_listening()]]
+            
+        MDTextField:
+            id: keyword_field
+            hint_text: "Enter stop word"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+            size_hint_x: 0.8
+        MDRaisedButton:
+            id: button
+            text: 'Start Listening'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+            on_release: app.toggle_listening()
