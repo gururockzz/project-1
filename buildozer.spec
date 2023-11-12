@@ -27,7 +27,7 @@ requirements = python3,kivy,kivymd,speechrecognition,pyttsx3
 # Supported orientations (one of landscape, portrait, portrait-reverse, or landscape-reverse)
 orientation = portrait
 
-# Android-specific settings
+# Buildozer settings
 [buildozer]
 
 # Log level (0 = error only, 1 = info, 2 = debug with command output)
@@ -42,7 +42,7 @@ build_dir = ./.buildozer
 # Path to build output storage (i.e., .apk, .aab, .ipa)
 bin_dir = ./bin
 
-# Android-specific settings
+# Android settings
 [app:android]
 
 # Fullscreen setting (0 = False, 1 = True)
@@ -86,8 +86,7 @@ permissions = INTERNET,WRITE_EXTERNAL_STORAGE
 # Android-specific copy library setting (0 = False, 1 = True)
 #copy_libs = 1
 
-# iOS-specific settings (if needed)
-# Uncomment and customize if building for iOS
+# iOS settings (commented out as it's not needed for this example)
 #[app:ios]
 #kivy_ios_dir = ../kivy-ios
 #kivy_ios_url = https://github.com/kivy/kivy-ios
@@ -96,10 +95,17 @@ permissions = INTERNET,WRITE_EXTERNAL_STORAGE
 #codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
 #codesign.development_team.debug = <hexstring>
 
-# Profiles (if needed)
-# Uncomment and customize if using profiles
+# OSX settings
+[app:osx]
+
+# Python version for OSX
+osx.python_version = 3.7.6
+
+# Kivy version for OSX
+osx.kivy_version = 1.9.1
+
+# Profiles (commented out as it's not needed for this example)
 #[app@demo]
 #title = My Application (demo)
 #[app:source.exclude_patterns@demo]
 #images/hd/*
-
