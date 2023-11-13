@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy==2.1.0,pillow,kivymd,speechrecognition,pyttsx3,kivy_garden
+requirements = python3==3.7.6,hostpython3==3.7.6,kivy==2.1.0,pillow,kivymd,speechrecognition,pyttsx3,certifi,chardet, lxml, docutils, future, idna, Kivy-Garden, Pygments, requests, six, soupsieve, urllib3, deep-translator, arabic-reshaper, python-bidi, openssl, pyopenssl, numpy, pytz, python-dateutil, pandas, setuptools, zope.interface, datetime
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
